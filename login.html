@@ -90,12 +90,12 @@ Smartphone Compatible web , free webdesigns for Nokia, Samsung, LG, SonyEricsson
 					<h3>Sign in your Account</h3>
 					<p class="use">Having hands on experience in creating innovative 
 							designs,I do offer design solutions which harness.</p>
-					<form>
-						<input type="text" value="User Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" required="">
-						<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-					</form>
+					<form action='Admin/loginform.php' method='POST'>
+						<input type="text" name="t1" value="User Name"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" required="">
+						<input type="password" name='t2' value="Password"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+					
 					<div class="ckeck-bg">
-						<div class="checkbox-form">
+						<!-- <div class="checkbox-form">
 							<div class="check-left">
 								<div class="check">
 									<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Keep me Logged in</label>
@@ -103,15 +103,14 @@ Smartphone Compatible web , free webdesigns for Nokia, Samsung, LG, SonyEricsson
 								<div class="check">
 									<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Remember my Password</label>
 								</div>
-							</div>
+							</div> -->
 							<div class="check-right">
-								<form>
-									<input type="submit" value="Login">
-								</form>
+									<input type="submit" value="Loign" name="sbmt">
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 					</div>
+				</form>
 					<p class="forget"><a href="#" class="pass">Forgot your Password?</a> <span>No problem! <a href="#">
 							Click here</a> to get a New Password</span></p>
 				</div>
