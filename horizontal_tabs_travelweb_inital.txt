@@ -318,3 +318,15 @@
 								</div>
 							</div>
 					</div>
+
+----------------------------------
+login.html
+<h4>For New People</h4>
+				<p>Having hands on experience in creating innovative designs,I do offer design solutions which harness</p>
+				<a href="sign-up.html">Register Here</a>
+				
+-----------------------------------
+TOOK OUT MAP
+<div class="map">
+		<iframe src="<iframe src=""" width="640" height="480"></iframe>" allowfullscreen></iframe>
+	</div>
