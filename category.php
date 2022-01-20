@@ -59,13 +59,14 @@ mysqli_close($cn);
 </div>
 
 </div>
+
+<div style="clear:both"></div>
+
+<?php include('bottom.php'); ?>
+</body>
 <style>
 body {
   background-image: url('background.jpg');
 }
 </style>
-<div style="clear:both"></div>
-
-<?php include('bottom.php'); ?>
-</body>
 </html>
