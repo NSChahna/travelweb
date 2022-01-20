@@ -31,7 +31,6 @@
 <tr><td style="font-size:30px; color:#09F"><b>Category</b></td></tr>
 <?php
 
-
 $s="select * from category";
 $result=mysqli_query($cn,$s);
 $r=mysqli_num_rows($result);
@@ -40,30 +39,80 @@ $r=mysqli_num_rows($result);
 while($data=mysqli_fetch_array($result))
 {
 	
-		echo "<tr><td style=' padding:5px;'><b><a href='subcat.php?catid=$data[0]'>$data[1]</a></b></td></tr>";
+		echo "<tr><td style=' padding:5px;'><a href='subcat.php?catid=$data[0]'>$data[1]</a></td></tr>";
 
 }
-mysqli_close($cn);
+
 ?>
 
 </table>
 
 </div>
 
-<div style="width:500px; float:left">
+<div style="width:800px; float:left">
 <table cellpadding="0px" cellspacing="0" width="1000px">
-<tr><td class="headingText">Welcome to Zestrip</td></tr>
-<tr><td class="paraText" width="900px">This is a tour and package management System where we can manage tour and package. We can add,edit,delete and view the details of tour and package from admin point of view.  
-</td><td style="background-image:url(); background-repeat:no-repeat; color:#FFF; font-family:Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:24px; " width="500px" height="150px" >< &nbsp;&nbsp;&nbsp; </div	></td></tr></table>
+<tr><td class="headingText">Subcategories</td></tr>
+<tr><td class="paraText" width="900px">
 
-</div>
 
-</div>
-<style>
-body {
-  background-image: url('background.jpg');
+
+
+<table cellpadding="0" cellspacing="0" width="900px">
+
+<?php
+
+$s="select * from subcategory where Catid='" .$_GET["catid"] . "'";
+$result=mysqli_query($cn,$s);
+$r=mysqli_num_rows($result);
+//echo $r;
+$n=0;
+while($data=mysqli_fetch_array($result))
+{
+	
+	if($n%3==0)
+	{
+	?>
+		
+
+
+<tr>
+<?php
+
+	}?>
+<td>
+<table border="0" width="100px" bordercolor="#FF6666">
+
+<tr><td align="center" style="background-color:#60B0E6; color:#FFF"><?php echo $data[1];?> </td></tr>
+<tr><td class="image"><img src="Admin/subcatimages/<?php echo $data[3]; ?>" width="250px" height="200px" /></td></tr><br/><br/>
+<tr><td align="center" style="background-color:#60B0E6; "><a href="package.php?subcatid=<?php echo $data[0];?>"><font color="#FFFFFF">View Detail</font></a></td></tr>
+
+</table>
+</td>
+<?php
+
+if($n%3==2)
+{
+?>
+</tr>
+
+<?php
 }
-</style>
+$n=$n+1;
+}
+mysqli_close($cn);
+?>
+
+</table>
+
+
+
+
+</td></tr></table>
+
+</div>
+
+</div>
+
 <div style="clear:both"></div>
 
 <?php include('bottom.php'); ?>
