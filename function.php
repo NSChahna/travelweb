@@ -4,7 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 </head>
-
+<style>
+body {
+  background-image: url('background.jpg');
+}
+</style>
 <body>
 <?php
 function makeconnection()

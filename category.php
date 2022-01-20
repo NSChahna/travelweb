@@ -14,7 +14,11 @@
 
 <!--/js-->
 </head>
-
+<style>
+body {
+  background-image: url('background.jpg');
+}
+</style>
 <body>
 <?php include('function.php'); ?>
 <?php include('top.php'); ?>
@@ -64,9 +68,5 @@ mysqli_close($cn);
 
 <?php include('bottom.php'); ?>
 </body>
-<style>
-body {
-  background-image: url('background.jpg');
-}
-</style>
+
 </html>
