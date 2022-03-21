@@ -19,5 +19,10 @@ function makeconnection()
 
 $cn=mysqli_connect("localhost","root","","travel");
 ?>
+<style>
+body {
+  background-image: url('background.jpg');
+}
+</style>
 </body>
 </html>

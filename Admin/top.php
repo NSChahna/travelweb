@@ -7,7 +7,7 @@
 						</div>
 						<div class="menu">
 						<ul id="nav">
-							 <li><a href="../index.php" target="_blank">Preview Website</a></li>
+							 <li><a href="../index.html" target="_blank">Preview Website</a></li>
 							 <li><a href="logout.php">Log Out</a></li>
 						     <div class="clearfix"></div>
 						 </ul>
