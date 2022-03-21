@@ -12,12 +12,8 @@
 <tr><td style="font-size:28px">User Links</td></tr>
 
 <?php if($_SESSION["usertype"]=="User")
-
-
+{?>}
 <tr><td><a href="addcategory.php">Add Category</a></td></tr>
-
-
-
 <tr><td><a href="viewcategory.php">View Category</a></td></tr>
 <tr><td><a href="addsubcategory.php">Add Subcategory</a></td></tr>
 
