@@ -43,9 +43,10 @@ if($_SESSION['loginstatus']=="")
 <div style="padding-top:100px; box-shadow:1px 1px 20px black; min-height:570px" class="container">
 <div class="col-sm-3" style="border-right:1px solid #999; min-height:450px;">
 <?php include('left.php'); ?>
+<?php include('left1.php'); ?>
 </div>
 <div class="col-sm-9" align="center">
-	<h1>WELCOME TO USER PANEL</h1>
+	<h1>WELCOME TO USER / ADMIN PANEL</h1>
 </div>
 
 
