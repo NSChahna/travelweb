@@ -96,7 +96,6 @@ while($data=mysqli_fetch_array($result))
 	{
 		echo "<option value=$data[0]>$data[1]</option>";
 	}
-	}
 }
 
 
