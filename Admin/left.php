@@ -9,7 +9,7 @@
 
 <body>
 <table style="width:100%">
-<tr><td style="font-size:28px">Admin Links</td></tr>
+<tr><td style="font-size:28px">User Links</td></tr>
 
 <?php if($_SESSION["usertype"]=="Admin")
 {?>
