@@ -75,7 +75,7 @@ if(isset($_POST["show"])&& $data[0]==$_POST["t2"])
 ?>
 
 </select>
-<input type="submit" value="Show" name="show" formnovalidate/>
+
 
 <tr><td class="lefttxt">Select Subcategory</td><td><select name="t3" required/><option value="">Select</option>
 
@@ -88,15 +88,13 @@ $r=mysqli_num_rows($result);
 
 while($data=mysqli_fetch_array($result))
 {
-	if(isset($_POST["show"]))
+	if(isset($_POST["show"])&& $data[0]==$_POST["t3"])
 	{
-	if($data[2]==$_POST["t2"])
-	{
-		echo"<option value=$data[0] >$data[1]</option>";
+			echo "<option value=$data[0] selected='selected'>$data[1]</option>";
 	}
 	else
 	{
-	    echo "<option value=$data[0]>$data[1]</option>";
+		echo "<option value=$data[0]>$data[1]</option>";
 	}
 	}
 }
