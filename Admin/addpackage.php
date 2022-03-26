@@ -96,7 +96,7 @@ while($data=mysqli_fetch_array($result))
 	}
 	else
 	{
-	//	echo "<option value=$data[0]>$data[1]</option>";
+	    echo "<option value=$data[0]>$data[1]</option>";
 	}
 	}
 }
